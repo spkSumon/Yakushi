@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      name="description"
+      content="Yakushi Sushi Bar in Tremelo: sushi, Thaise curry en wok aan de Baalsebaan. Eet in, haal af of bestel online."
+    />
+    <link href="CSS/styles.css" rel="stylesheet" />
+    <title>Yakushi Sushi Bar Tremelo</title>
+  </head>
+  <body>
+    <!-- ── SCROLL POPUP ── -->
+    <div class="scroll-popup" id="scrollPopup">
+      <button class="scroll-popup-close" id="popupClose" aria-label="Sluiten">✕</button>
+      <p class="scroll-popup-label">Zin in sushi thuis?</p>
+      <p class="scroll-popup-text">
+        Bestel online en haal af aan de Baalsebaan. Kies zelf het uur waarop u
+        langskomt.
+      </p>
+      <a class="btn-rood-full" href="https://yakushisushibar.klikeneet.be" target="_blank" rel="noopener">Online bestellen →</a>
+    </div>
+
+    <!-- ── TOPBALK ── -->
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span class="topbar-status"><span class="status-dot" id="statusDot"></span><span id="statusText">Di – zo open van 16:30 tot 21:30</span></span>
+        <span class="topbar-extra">Bel ons: <a href="tel:+3216416411">016 41 64 11</a></span>
+      </div>
+    </div>
+
+    <header class="nav">
+      <div class="nav-inner container">
+        <a class="nav-logo" href="index.html" aria-label="Yakushi Sushi Bar, naar de startpagina">
+          <img alt="" src="IMG/logo-klein.png" />
+          <span class="nav-logo-naam">YAKUSHI<small>SUSHI · THAI · WOK</small></span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false">☰</button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a class="active" href="#top">Home</a></li>
+          <li><a href="#kaart">Kaart</a></li>
+          <li><a href="#boten">Sushiboten</a></li>
+          <li><a href="#actueel">Actueel</a></li>
+          <li><a href="#bezoek">Contact</a></li>
+          <li><a class="nav-cta" href="https://yakushisushibar.klikeneet.be" target="_blank" rel="noopener">Bestel online</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ── HERO ── -->
+      <section class="hero">
+        <img
+          alt="Een grote houten sushiboot vol rolls, sashimi en nigiri"
+          class="hero-img"
+          src="IMG/boot-groot.jpg"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+          <p class="hero-eyebrow">Sushi, Thai en wok in Baal</p>
+          <h1 class="hero-title">Verse smaken van de zee, <em>kunstig gerold</em> op je bord.</h1>
+          <p class="hero-sub">
+            Japanse en Thaise keuken aan de Baalsebaan in Tremelo. Eet bij ons
+            in de zaal of op het terras, haal af, of bestel online.
+          </p>
+          <div class="hero-btns">
+            <a class="btn btn-rood" href="https://yakushisushibar.klikeneet.be" target="_blank" rel="noopener">Bestel online</a>
+            <a class="btn btn-ghost-white" href="#reserveer">Reserveer een tafel</a>
+          </div>
+          <div class="hero-tags">
+            <span>Eat in</span><span>Take away</span><span>Online bestellen</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── FOTOBAND ── -->
+      <div class="band" aria-hidden="true">
+        <div class="band-track" id="bandTrack">
+          <figure><img alt="" src="IMG/band-boot-toonbank.jpg" loading="lazy" /><figcaption>Sushiboot op de toonbank</figcaption></figure>
+          <figure><img alt="" src="IMG/band-schaal-sashimi.jpg" loading="lazy" /><figcaption>Ronde schaal met sashimi en nigiri</figcaption></figure>
+          <figure><img alt="" src="IMG/band-plank-stokjes.jpg" loading="lazy" /><figcaption>Rolls met tempura garnaal</figcaption></figure>
+          <figure><img alt="" src="IMG/band-rolls-op-zwart.jpg" loading="lazy" /><figcaption>Rolls, nigiri en sashimi</figcaption></figure>
+          <figure><img alt="" src="IMG/band-schalen-in-de-hand.jpg" loading="lazy" /><figcaption>Sashimi en poke, net klaar</figcaption></figure>
+          <figure><img alt="" src="IMG/band-terras-avond.jpg" loading="lazy" /><figcaption>Een avond op het terras</figcaption></figure>
+        </div>
+      </div>
+
+      <!-- ── SIGNATUUR ── -->
+      <section class="signature" id="boten">
+        <div class="container">
+          <p class="section-label">Onze signatuur</p>
+          <h2 class="section-title">Boten en schalen om te delen</h2>
+          <p class="section-subtitle">
+            Een houten boot vol rolls, nigiri en sashimi, of een grote ronde
+            schaal: zo komt sushi bij Yakushi op tafel. Voor uzelf, voor twee,
+            of voor het hele gezin.
+          </p>
+          <div class="signature-grid">
+            <figure><img alt="Een sushiboot aan tafel in de zaal" src="IMG/boot-aan-tafel.jpg" loading="lazy" /><figcaption>Boot aan tafel</figcaption></figure>
+            <figure><img alt="Ronde schaal met geflambeerde sushi" src="IMG/schaal-aburi.jpg" loading="lazy" /><figcaption>Ronde schaal</figcaption></figure>
+            <figure><img alt="Sushiboot met avocado-rolls" src="IMG/boot-avocado.jpg" loading="lazy" /><figcaption>Avocado-rolls</figcaption></figure>
+            <figure><img alt="Schaal met nigiri en maki" src="IMG/schaal-nigiri.jpg" loading="lazy" /><figcaption>Nigiri en maki</figcaption></figure>
+            <figure><img alt="Geflambeerde sushiboot" src="IMG/boot-geflambeerd.jpg" loading="lazy" /><figcaption>Geflambeerd</figcaption></figure>
+            <figure><img alt="Schalen sushi om te delen" src="IMG/schalen-in-de-hand.jpg" loading="lazy" /><figcaption>Schaal om te delen</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── PRIJSLIJST BOTEN ── -->
+      <section class="boten">
+        <div class="container">
+          <div class="boten-box">
+            <div class="boten-intro">
+              <p class="section-label" style="color: var(--hout)">Sushiboten</p>
+              <h3>Assortiment van sushi, sashimi en nigiri.</h3>
+              <p>Van een boot voor één tot de Titanic deluxe voor vier. Rond de feestdagen bestelt u best een paar dagen op voorhand.</p>
+              <a class="btn-outline-white" href="https://yakushisushibar.klikeneet.be" target="_blank" rel="noopener">Fusion boten en combo's</a>
+            </div>
+            <ul class="boten-list">
+              <li>
+                <span class="boten-naam">Yakushi traditional boot <small>22 stuks · 1 persoon</small></span>
+                <span class="boten-prijs">€ 31,50</span>
+                <span class="boten-noot">4 uramaki met zalm- of tonijntopping, 8 hosomaki, 4 nigiri mix, 2 gunkan en 4 sashimi; alles rauwe vis, zonder gefrituurde rolls</span>
+              </li>
+              <li>
+                <span class="boten-naam">Yakushi sushiboot 1 <small>24 stuks · 1 persoon</small></span>
+                <span class="boten-prijs">€ 30,00</span>
+              </li>
+              <li>
+                <span class="boten-naam">Yakushi sushiboot 2 <small>49 stuks · 2 personen</small></span>
+                <span class="boten-prijs">€ 60,00</span>
+              </li>
+              <li>
+                <span class="boten-naam">Yakushi sushi maki boot <small>44 stuks</small></span>
+                <span class="boten-prijs">€ 56,50</span>
+                <span class="boten-noot">zonder sashimi en nigiri</span>
+              </li>
+              <li>
+                <span class="boten-naam">Yakushi royal boot <small>45 stuks</small></span>
+                <span class="boten-prijs">€ 65,00</span>
+                <span class="boten-noot">alleen zalm en tonijn</span>
+              </li>
+              <li>
+                <span class="boten-naam">Yakushi sushiboot 3 <small>75 stuks · 3 personen</small></span>
+                <span class="boten-prijs">€ 86,00</span>
+              </li>
+              <li>
+                <span class="boten-naam">Yakushi Titanic boot deluxe <small>105 stuks · 4 personen</small></span>
+                <span class="boten-prijs">€ 130,00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── OVER YAKUSHI ── -->
+      <section class="over">
+        <div class="container over-grid">
+          <div class="over-images">
+            <img alt="De eetzaal met rieten hanglampen en rode lampionnen" src="IMG/eetzaal.jpg" loading="lazy" />
+            <img alt="Het bakstenen hoekpand met het houten terras" src="IMG/gevel-terras.jpg" loading="lazy" />
+            <img alt="Gasten aan tafel op het terras" src="IMG/gasten-terras.jpg" loading="lazy" />
+          </div>
+          <div class="over-text">
+            <p class="section-label">Over Yakushi</p>
+            <h2 class="over-title">Een sfeervol restaurant, gewoon om de hoek</h2>
+            <p>
+              Yakushi is een sfeervol en toegankelijk restaurant op loopafstand
+              van Tremelo centrum. We combineren de klassieke en de hedendaagse
+              Japanse keuken met de Thaise. Prijs-kwaliteit ligt ons aan het
+              hart: we willen elke liefhebber verwennen met goed Japans eten, in
+              een ongedwongen sfeer.
+            </p>
+            <p><strong>Ons geheim? We werken alleen met verse, traditionele ingrediënten. En dat proeft u!</strong></p>
+            <p>
+              Klantvriendelijkheid vinden we even belangrijk. Zeg ons gerust wat
+              u ervan vond, aan tafel of op
+              <a href="https://www.facebook.com/yakushiSushiBar" target="_blank" rel="noopener">Facebook</a>.
+            </p>
+            <div class="stats">
+              <div class="stat"><div class="stat-num">4,8</div><div class="stat-label">op Tripadvisor</div></div>
+              <div class="stat"><div class="stat-num">100%</div><div class="stat-label">aanbevolen op Facebook</div></div>
+              <div class="stat"><div class="stat-num">6</div><div class="stat-label">avonden per week open</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── KAART ── -->
+      <section class="kaart" id="kaart">
+        <div class="container">
+          <p class="section-label">Niet alleen sushi</p>
+          <h2 class="section-title">Thaise curry, wok en pad Thai</h2>
+          <p class="section-subtitle">
+            Liever iets warms? Elke schotel komt met rijst of noedels, en wie
+            houdt van gebakken rijst of noedels, vraagt het er gewoon bij.
+          </p>
+          <div class="card-grid">
+            <div class="card">
+              <div class="card-top"></div>
+              <div class="card-body">
+                <h3 class="card-title">Thaise rode curry</h3>
+                <p class="card-text">Kip, scampi, rund of vegi, in kokosmelk met bamboescheuten.</p>
+                <p class="card-price">vanaf € 16,00</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-top"></div>
+              <div class="card-body">
+                <h3 class="card-title">Wok</h3>
+                <p class="card-text">Met diverse groenten en chefsaus, op rijst of noedels.</p>
+                <p class="card-price">vanaf € 16,00</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-top"></div>
+              <div class="card-body">
+                <h3 class="card-title">Pad Thai</h3>
+                <p class="card-text">Platte rijstnoedels met kip, rund, scampi of vegi.</p>
+                <p class="card-price">vanaf € 16,00</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-top"></div>
+              <div class="card-body">
+                <h3 class="card-title">Teriyaki</h3>
+                <p class="card-text">Kip, zalm, rund of crispy eend, met gebakken groenten.</p>
+                <p class="card-price">vanaf € 19,50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="momo">
+            <div class="momo-badge">Uit de<br />Himalaya</div>
+            <div>
+              <h3 class="momo-title">Kip momo</h3>
+              <p>Tussen de dimsum op onze kaart staat er een uit de Himalaya: momo, gevuld met kip. Per zes of per twaalf.</p>
+            </div>
+            <div class="momo-price">€ 7,50 / 14,00</div>
+          </div>
+
+          <div class="kaart-cta">
+            <a class="btn-rood-full" href="https://yakushisushibar.klikeneet.be" target="_blank" rel="noopener">Bekijk de hele kaart</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── ACTUEEL ── -->
+      <section class="actueel" id="actueel">
+        <div class="container">
+          <p class="section-label">Actueel</p>
+          <h2 class="section-title">Wat er nu loopt</h2>
+          <p class="section-subtitle">Speciale momenten in het jaar, met een sushiboot of een menu voor twee.</p>
+          <div class="actueel-grid">
+            <article class="actueel-item">
+              <p class="actueel-tag">Feestdagen</p>
+              <h3>Bestel uw sushiboot vooraf</h3>
+              <p>Rond kerst en oudjaar is het druk in de keuken. Bestel online een paar dagen op voorhand en kies zelf de dag en het uur waarop u afhaalt.</p>
+            </article>
+            <article class="actueel-item">
+              <p class="actueel-tag">Elk jaar in februari</p>
+              <h3>Valentijn voor twee</h3>
+              <p>Met Valentijn staat er een menu voor twee klaar: twee glazen cava, miso soep en dimsum, daarna teriyaki crispy kip of een Love Boat, en dame blanche als dessert.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── RESERVEER ── -->
+      <section class="reserveer" id="reserveer">
+        <img class="reserveer-img" alt="" src="IMG/band-terras-avond.jpg" loading="lazy" />
+        <div class="container">
+          <p class="hero-eyebrow">Reserveren</p>
+          <h2 class="reserveer-title">Een tafel voor vanavond?</h2>
+          <p>Reserveer telefonisch op 016 41 64 11. Liever thuis eten? Bestel online en haal af aan de Baalsebaan.</p>
+          <div class="hero-btns">
+            <a class="btn btn-rood" href="tel:+3216416411">Bel 016 41 64 11</a>
+            <a class="btn btn-ghost-white" href="https://yakushisushibar.klikeneet.be" target="_blank" rel="noopener">Bestel online</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── BEZOEK ── -->
+      <section class="bezoek" id="bezoek">
+        <div class="container">
+          <p class="section-label">Langskomen</p>
+          <h2 class="section-title">Aan de Baalsebaan in Tremelo</h2>
+          <p class="section-subtitle">Op loopafstand van Tremelo centrum. Zes avonden per week open, maandag zijn we dicht.</p>
+          <div class="bezoek-grid">
+            <div class="bezoek-box">
+              <h3>Openingsuren</h3>
+              <ul class="uren" id="uren">
+                <li data-dag="1"><span>Maandag</span><span class="dicht">gesloten</span></li>
+                <li data-dag="2"><span>Dinsdag</span><span>16:30 – 21:30</span></li>
+                <li data-dag="3"><span>Woensdag</span><span>16:30 – 21:30</span></li>
+                <li data-dag="4"><span>Donderdag</span><span>16:30 – 21:30</span></li>
+                <li data-dag="5"><span>Vrijdag</span><span>16:30 – 21:30</span></li>
+                <li data-dag="6"><span>Zaterdag</span><span>16:30 – 21:30</span></li>
+                <li data-dag="0"><span>Zondag</span><span>16:30 – 21:30</span></li>
+              </ul>
+            </div>
+            <div class="bezoek-box">
+              <h3>Contact</h3>
+              <p class="bezoek-detail"><span>Adres</span>Baalsebaan 38, 3120 Tremelo</p>
+              <p class="bezoek-detail"><span>Telefoon</span><a href="tel:+3216416411">016 41 64 11</a></p>
+              <p class="bezoek-detail"><span>E-mail</span><a href="mailto:info@yakushisushi.be">info@yakushisushi.be</a></p>
+              <a class="btn-outline-dark" href="https://www.google.com/maps/dir/?api=1&destination=Baalsebaan+38,+3120+Tremelo" target="_blank" rel="noopener">Plan uw route</a>
+            </div>
+            <div class="bezoek-map">
+              <img alt="Kaart met Yakushi Sushi Bar aan de Baalsebaan 38 in Tremelo" src="IMG/kaart.jpg" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col--brand">
+            <a class="nav-logo" href="#top">
+              <img alt="" src="IMG/logo-klein.png" />
+              <span class="nav-logo-naam">YAKUSHI<small>SUSHI BAR</small></span>
+            </a>
+            <p>Japanse en Thaise keuken aan de Baalsebaan in Tremelo. Volg ons op <a href="https://www.instagram.com/yakushisushibar/" target="_blank" rel="noopener">Instagram</a>.</p>
+          </div>
+          <div>
+            <p class="footer-heading">Ontdek</p>
+            <ul class="footer-links">
+              <li><a href="#kaart">Kaart</a></li>
+              <li><a href="#boten">Sushiboten</a></li>
+              <li><a href="#actueel">Actueel</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-heading">Bestellen</p>
+            <ul class="footer-links">
+              <li><a href="https://yakushisushibar.klikeneet.be" target="_blank" rel="noopener">Online bestellen</a></li>
+              <li><a href="#reserveer">Reserveren</a></li>
+              <li><a href="tel:+3216416411">Bel ons</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-heading">Volg ons</p>
+            <ul class="footer-links">
+              <li><a href="https://www.facebook.com/yakushiSushiBar" target="_blank" rel="noopener">Facebook</a></li>
+              <li><a href="https://www.instagram.com/yakushisushibar/" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="footerYear"></span> Yakushi Sushi Bar · Baalsebaan 38, 3120 Tremelo</span>
+          <span>Sushi · Thai · Wok</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Popup na wat scrollen, zoals op de Sioen-site
+      const popup = document.getElementById("scrollPopup");
+      let shown = false;
+      window.addEventListener("scroll", function () {
+        if (!shown && window.scrollY > 600) {
+          popup.classList.add("visible");
+          shown = true;
+        }
+      });
+      document.getElementById("popupClose").addEventListener("click", function () {
+        popup.classList.remove("visible");
+      });
+
+      // Mobiel menu
+      const navToggle = document.getElementById("navToggle");
+      const navMenu = document.getElementById("navMenu");
+      navToggle.addEventListener("click", function () {
+        const open = navMenu.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", open);
+      });
+      navMenu.addEventListener("click", function (e) {
+        if (e.target.tagName === "A") navMenu.classList.remove("open");
+      });
+
+      // Fotoband dupliceren voor een naadloze lus
+      const track = document.getElementById("bandTrack");
+      track.innerHTML += track.innerHTML;
+
+      // Open/gesloten-status en vandaag markeren (di–zo 16:30–21:30)
+      const nu = new Date();
+      const dag = nu.getDay();
+      const minuten = nu.getHours() * 60 + nu.getMinutes();
+      document.querySelector('#uren li[data-dag="' + dag + '"]').classList.add("vandaag");
+      const statusText = document.getElementById("statusText");
+      const statusDot = document.getElementById("statusDot");
+      if (dag !== 1 && minuten >= 990 && minuten < 1290) {
+        statusText.textContent = "Nu open, tot 21:30";
+      } else {
+        statusDot.classList.add("closed");
+        statusText.textContent =
+          dag !== 1 && minuten < 990 ? "Vandaag open vanaf 16:30" : "Nu gesloten · di – zo open vanaf 16:30";
+      }
+
+      // Houd het jaartal in de footer automatisch actueel
+      document.getElementById("footerYear").textContent = nu.getFullYear();
+    </script>
+  </body>
+</html>
