@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap");
+/* Lettertypes worden geladen in de <head> van index.html */
 
 /* ══════════════════════════════════════════════════════════════
    DESIGN TOKENS – kleuren van Yakushi, opbouw van Sioen
@@ -62,7 +62,9 @@ img {
 /* Inline tekstlinks */
 .over-text a:not([class]),
 .footer-col--brand a:not([class]),
-.bezoek-detail a:not([class]) {
+.bezoek-detail a:not([class]),
+.section-subtitle a:not([class]),
+.faq-list a:not([class]) {
   color: var(--rood);
   font-weight: 500;
   text-decoration: none;
@@ -71,7 +73,9 @@ img {
 }
 .over-text a:not([class]):hover,
 .footer-col--brand a:not([class]):hover,
-.bezoek-detail a:not([class]):hover {
+.bezoek-detail a:not([class]):hover,
+.section-subtitle a:not([class]):hover,
+.faq-list a:not([class]):hover {
   border-color: var(--rood);
 }
 
@@ -602,7 +606,7 @@ img {
   color: rgba(255, 255, 255, 0.05);
   line-height: 1;
 }
-.boten-intro h3 {
+.boten-intro h2 {
   font-family: var(--font-kop);
   font-weight: 900;
   font-size: 2rem;
@@ -899,6 +903,71 @@ img {
 }
 
 /* ══════════════════════════════════════════════════════════════
+   VEELGESTELDE VRAGEN
+══════════════════════════════════════════════════════════════ */
+.faq {
+  padding: 7rem 0;
+  background: var(--white);
+  border-top: var(--border);
+}
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  align-items: start;
+}
+.faq-list {
+  border-top: var(--border);
+}
+.faq-list details {
+  border-bottom: var(--border);
+}
+.faq-list summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.35rem 0;
+  font-family: var(--font-kop);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--antraciet);
+  transition: color 0.2s;
+}
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+.faq-list summary::after {
+  content: "+";
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid var(--gray-light);
+  color: var(--rood);
+  font-family: var(--font-tekst);
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+.faq-list summary:hover {
+  color: var(--rood);
+}
+.faq-list details[open] summary::after {
+  content: "\2212";
+  background: var(--rood);
+  border-color: var(--rood);
+  color: #fff;
+}
+.faq-list details p {
+  color: var(--gray);
+  padding: 0 3.5rem 1.5rem 0;
+}
+
+/* ══════════════════════════════════════════════════════════════
    BEZOEK
 ══════════════════════════════════════════════════════════════ */
 .bezoek {
@@ -954,7 +1023,11 @@ img {
   text-transform: uppercase;
   color: var(--gray);
 }
+address {
+  font-style: normal;
+}
 .bezoek-map {
+  display: block;
   border: var(--border);
   overflow: hidden;
   min-height: 320px;
@@ -1121,11 +1194,15 @@ img {
   }
   .over-grid,
   .boten-box,
-  .actueel-grid {
+  .actueel-grid,
+  .faq-grid {
     grid-template-columns: 1fr;
   }
   .over-grid {
     gap: 3rem;
+  }
+  .faq-grid {
+    gap: 0;
   }
   .signature-grid {
     grid-template-columns: 1fr 1fr;
@@ -1173,6 +1250,7 @@ img {
   .kaart,
   .actueel,
   .reserveer,
+  .faq,
   .bezoek {
     padding: 4.5rem 0;
   }
