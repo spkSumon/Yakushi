@@ -70,7 +70,7 @@
             "hasMap": "https://www.google.com/maps/dir/?api=1&destination=Baalsebaan+38,+3120+Tremelo",
             "areaServed": ["Tremelo", "Baal", "Haacht", "Keerbergen", "Rotselaar", "Begijnendijk"],
             "servesCuisine": ["Sushi", "Japans", "Thais", "Wok"],
-            "acceptsReservations": true,
+            "acceptsReservations": "https://tableagent.com/brussels/yakushi-sushi-bar-tremelo/",
             "hasMenu": "https://yakushisushibar.klikeneet.be",
             "openingHoursSpecification": [
               {
@@ -80,11 +80,17 @@
                 "closes": "21:30"
               }
             ],
-            "potentialAction": {
-              "@type": "OrderAction",
-              "target": "https://yakushisushibar.klikeneet.be",
-              "deliveryMethod": "http://purl.org/goodrelations/v1#DeliveryModePickUp"
-            },
+            "potentialAction": [
+              {
+                "@type": "OrderAction",
+                "target": "https://yakushisushibar.klikeneet.be",
+                "deliveryMethod": "http://purl.org/goodrelations/v1#DeliveryModePickUp"
+              },
+              {
+                "@type": "ReserveAction",
+                "target": "https://tableagent.com/brussels/yakushi-sushi-bar-tremelo/"
+              }
+            ],
             "sameAs": [
               "https://www.facebook.com/yakushiSushiBar",
               "https://www.instagram.com/yakushisushibar/"
@@ -106,7 +112,7 @@
               {
                 "@type": "Question",
                 "name": "Hoe reserveer ik een tafel?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Bel ons op 016 41 64 11. U kunt binnen in de zaal eten of op ons terras." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Reserveer online via TableAgent of bel ons op 016 41 64 11. U kunt binnen in de zaal eten of op ons terras." }
               },
               {
                 "@type": "Question",
@@ -171,7 +177,7 @@
           </p>
           <div class="hero-btns">
             <a class="btn btn-rood" href="https://yakushisushibar.klikeneet.be" target="_blank" rel="noopener">Bestel online</a>
-            <a class="btn btn-ghost-white" href="#reserveer">Reserveer een tafel</a>
+            <a class="btn btn-ghost-white" href="https://tableagent.com/brussels/yakushi-sushi-bar-tremelo/" target="_blank" rel="noopener">Reserveer een tafel</a>
           </div>
         </div>
       </section>
@@ -330,10 +336,10 @@
         <div class="container">
           <p class="hero-eyebrow">Reserveren</p>
           <h2 class="reserveer-title">Een tafel voor vanavond?</h2>
-          <p>Bel ons om te reserveren. Liever thuis eten? Bestel online en haal af aan de Baalsebaan.</p>
+          <p>Kies online uw dag, uur en aantal personen, of bel ons. Liever thuis eten? Bestel online en haal af aan de Baalsebaan.</p>
           <div class="hero-btns">
-            <a class="btn btn-rood" href="tel:+3216416411">Bel 016 41 64 11</a>
-            <a class="btn btn-ghost-white" href="https://yakushisushibar.klikeneet.be" target="_blank" rel="noopener">Bestel online</a>
+            <a class="btn btn-rood" href="https://tableagent.com/brussels/yakushi-sushi-bar-tremelo/" target="_blank" rel="noopener">Reserveer online</a>
+            <a class="btn btn-ghost-white" href="tel:+3216416411">Bel 016 41 64 11</a>
           </div>
         </div>
       </section>
@@ -360,7 +366,7 @@
             </details>
             <details>
               <summary>Hoe reserveer ik een tafel?</summary>
-              <p>Bel ons op 016 41 64 11. U kunt binnen in de zaal eten of op ons terras.</p>
+              <p><a href="https://tableagent.com/brussels/yakushi-sushi-bar-tremelo/" target="_blank" rel="noopener">Reserveer online via TableAgent</a> of bel ons op 016 41 64 11. U kunt binnen in de zaal eten of op ons terras.</p>
             </details>
             <details>
               <summary>Hebben jullie ook vegetarische gerechten?</summary>
@@ -423,6 +429,7 @@
         </a>
         <ul class="footer-links">
           <li><a href="https://yakushisushibar.klikeneet.be" target="_blank" rel="noopener">Online bestellen</a></li>
+          <li><a href="https://tableagent.com/brussels/yakushi-sushi-bar-tremelo/" target="_blank" rel="noopener">Reserveren</a></li>
           <li><a href="#vragen">Veelgestelde vragen</a></li>
           <li><a href="https://www.facebook.com/yakushiSushiBar" target="_blank" rel="noopener">Facebook</a></li>
           <li><a href="https://www.instagram.com/yakushisushibar/" target="_blank" rel="noopener">Instagram</a></li>
